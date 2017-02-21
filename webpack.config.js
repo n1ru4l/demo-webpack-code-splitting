@@ -1,9 +1,11 @@
-`use strict`
+'use strict'
 
 const path = require(`path`)
+const CopyWebpackPlugin = require(`copy-webpack-plugin`)
 
 
 module.exports = {
+  context: path.join(__dirname, `src`),
   output: {
     path: path.resolve(__dirname, `dist`),
     filename: `dist.js`,
@@ -18,9 +20,10 @@ module.exports = {
       }
     ],
   },
+  plugins: [
+    new CopyWebpackPlugin([
+      { from: `index.html`, },
+    ]),
+  ],
   devtool: `inline-source-map`,
-  devServer: {
-    contentBase: path.join(__dirname, `dist`),
-    port: 1337,
-  },
 }

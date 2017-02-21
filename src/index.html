@@ -1,0 +1,32 @@
+<!doctype html>
+
+<html>
+<head>
+    <title>Webpack Code-Splitting Demo</title>
+</head>
+<body>
+    <h2>Load single</h2>
+
+    <button data-loader="A">Load module A</button> <br>
+    <button data-loader="B">Load module B</button> <br>
+    <button data-loader="C">Load module C</button> <br>
+    <br>
+    <h2>Custom module</h2>
+    <select data-custom="">
+        <option value="a" selected>A</option>
+        <option value="b">B</option>
+        <option value="c">C</option>
+        <option value="d">D</option>
+        <option value="e">E</option>
+    </select>
+    <button data-loader="CUSTOM">Load custom module</button>
+
+    <h2>Load all</h2>
+    <button data-loader="ALL"> DONT PUSH ME PLXXX</button>
+
+    <h2>Log</h2>
+    <pre data-log></pre>
+<script src="../dist/dist.js"></script>
+</body>
+</html>
+

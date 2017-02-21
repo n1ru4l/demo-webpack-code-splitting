@@ -1,3 +1,3 @@
-import { appendToLog } from '../'
+import { appendToLog } from './'
 
 appendToLog(`Module D is loaded`)

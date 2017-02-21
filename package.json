@@ -1,5 +1,5 @@
 {
-  "name": "webpack-code-splitting",
+  "name": "demo-webpack-code-splitting",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -8,15 +8,14 @@
     "dev": "webpack --config webpack.config.js --watch",
     "start": "http-server dist/"
   },
-  "author": "",
+  "author": "Laurin Quast <laurinquast@googlemail.com>",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.23.1",
     "babel-loader": "^6.3.2",
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "http-server": "^0.9.0",
     "webpack": "^2.2.1"
   },
-  "dependencies": {
-    "http-server": "^0.9.0"
-  }
+  "dependencies": {}
 }

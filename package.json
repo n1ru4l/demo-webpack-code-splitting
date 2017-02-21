@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --config webpack.config.js --watch",
     "build": "webpack --config webpack.config.js",
-    "start": "http-server dist/"
+    "start": "http-server -p 1337 dist/"
   },
   "author": "Laurin Quast <laurinquast@googlemail.com>",
   "license": "MIT",
